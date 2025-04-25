@@ -8,7 +8,7 @@ growth_type_b = [0.3, 0.8, 1.5, 2.2, 2.9, 3.5, 4.0]
 
 growth_type_c = [0.2, 0.5, 1.1, 1.8, 2.5, 3.1, 3.7]
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(8,6))
 
 ax.plot(days, growth_type_a, label='Type A', marker='o', markersize=4)
 ax.plot(days, growth_type_b, label='Type B', marker='o', markersize=4)
@@ -22,4 +22,5 @@ ax.grid(True)
 
 ax.legend()
 
-plt.show()
+#plt.show()
+plt.savefig('plant_growth.png', bbox_inches='tight')
