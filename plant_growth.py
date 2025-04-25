@@ -14,4 +14,8 @@ ax.plot(days, growth_type_a, linewidth=3)
 ax.plot(days, growth_type_b, linewidth=3)
 ax.plot(days, growth_type_c, linewidth=3)
 
+ax.set_title('Growth of Bean Seed Types Over One Week')
+ax.set_xlabel('Day')
+ax.set_ylabel('Height (cm)')
+
 plt.show()
